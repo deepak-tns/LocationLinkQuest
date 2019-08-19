@@ -1,0 +1,112 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <LinearLayout
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <RelativeLayout
+            android:id="@+id/badge_layout1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center|right"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_item_count"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/notificationButton"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/badge_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/relative_layout_item_count"
+                android:background="@android:drawable/ic_notification_overlay"
+                android:text="2"
+                android:textColor="#FFF"
+                android:textSize="8sp"
+                android:visibility="gone"
+                android:textStyle="bold" />
+            <TextView
+
+                android:id="@+id/tv_toolbar"
+                android:textColor="#fff"
+                android:text="@string/app_name"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/VechicleTrakerTextView"
+        android:textColor="#fff"
+        android:text="Vehicle Traker"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <TextView
+
+            android:id="@+id/LocationTextView"
+            android:textColor="#fff"
+            android:text="Location"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+
+            android:id="@+id/OPTextView"
+            android:textColor="#fff"
+            android:text="OP"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

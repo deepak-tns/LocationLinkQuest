@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentLatLongFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Latitude:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Longitude:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Time of request:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Remark:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:ems="10"
+        android:id="@+id/tvRemark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Image1"
+            android:textSize="13sp"></TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/losdetail_edt_img1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"></EditText>
+
+        <ImageView
+            android:id="@+id/losdetail_iv1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tag="imgView,Bearing0" />
+
+        <ImageButton
+            android:id="@+id/losdetail_ib1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_share1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tag="imgView,Bearing0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Image2"
+            android:textSize="13sp"></TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/losdetail_edt_img2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"></EditText>
+
+
+        <ImageView
+            android:id="@+id/losdetail_iv2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tag="imgView,Bearing0" />
+
+        <ImageButton
+            android:id="@+id/losdetail_ib2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_share2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tag="imgView,Bearing0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Image3"
+            android:textSize="13sp"></TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/losdetail_edt_img3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"></EditText>
+
+
+        <ImageView
+            android:id="@+id/losdetail_iv3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tag="imgView,Bearing0" />
+
+        <ImageButton
+            android:id="@+id/losdetail_ib3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_share3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tag="imgView,Bearing0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Image4"
+            android:textSize="13sp"></TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/losdetail_edt_img4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"></EditText>
+
+
+        <ImageView
+            android:id="@+id/losdetail_iv4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tag="imgView,Bearing0" />
+
+        <ImageButton
+            android:id="@+id/losdetail_ib4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_share4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tag="imgView,Bearing0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text="Image5"
+            android:textSize="13sp"></TextView>
+
+        <EditText
+            android:focusable="false"
+            android:id="@+id/losdetail_edt_img5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textSize="13sp"></EditText>
+
+
+        <ImageView
+            android:id="@+id/losdetail_iv5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tag="imgView,Bearing0" />
+
+        <ImageButton
+            android:id="@+id/losdetail_ib5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_share5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_share"
+            android:tag="imgView,Bearing0" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:onClick="SendData"
+        android:layout_marginTop="20dp"
+        android:text="Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</FrameLayout>
